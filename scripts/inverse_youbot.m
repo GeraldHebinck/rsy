@@ -30,7 +30,8 @@ function theta = inverse_youbot(target_)
     % Ziel in Z minuus Laenge Joint1
     zd = z - a1;
     % Winkel Joint1
-    theta1 = acos(x/d);
+    % mit atan2 und nicht acos(x/d) wegen Vorzeichen
+    theta1 = atan2(y,x);
     % Ziel Joint4 XY
     r4 = rd - a4 * cos(psi);
     % Ziel Joint4 Z
