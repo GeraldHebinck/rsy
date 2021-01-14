@@ -63,7 +63,7 @@
 
   <!-- Orbbec Astra -->
   <xacro:sensor_orbbec_astra prefix="front_rgbd_camera" parent="arm_link_5" prefix_topic="front_rgbd_camera">
-		<origin xyz="0.1 0.0 0.0" rpy="0 ${M_PI / 2.0} 0"/>
+		<origin xyz="0.05 0.0 0.0" rpy="0 ${M_PI / 2.0} 0"/>
 	</xacro:sensor_orbbec_astra>
 
 </robot>
